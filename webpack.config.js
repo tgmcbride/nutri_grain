@@ -1,6 +1,6 @@
 module.exports = {
     // change to .tsx if necessary
-    entry: './src/app.tsx',
+    entry: './Src/Components/App.tsx',
     output: {
       filename: './bundle.js'
     },
