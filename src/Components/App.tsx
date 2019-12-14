@@ -1,11 +1,9 @@
-import * as React from "react";
-
+import * as React from "../../node_modules/react";
+import "./Styles/Style.css"
 
 const App  = () => {
     return(
-        <div className="app" id="app">
-
-        </div>
+        <div className="app" id="app"></div>
     );
 };
 
