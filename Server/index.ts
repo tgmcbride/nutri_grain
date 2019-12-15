@@ -5,8 +5,8 @@ const path = require('path');
 require('dotenv').config();
 
 
-export const server = express();
-const port = 3001;
+const server = express();
+const port: string = process.env.SERVER_PORT;
 
 
 server.use(bodyParser.json());
@@ -20,3 +20,6 @@ server.listen(port, ()=>{
 server.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
+
+
+export default server;
