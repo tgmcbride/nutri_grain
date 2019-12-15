@@ -5,7 +5,7 @@ const path = require('path');
 require('dotenv').config();
 
 
-const server = express();
+export const server = express();
 const port = 3001;
 
 
@@ -15,7 +15,7 @@ server.use(express.static(`${__dirname}/../../build`));
 
 server.listen(port, ()=>{
     console.log(`listening on port ${port}`);
-})
+});
 
 server.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '../build/index.html'));
